@@ -1,4 +1,5 @@
 const buttons = document.querySelector(".buttons");
+const outputScreen = document.querySelector(".outputScreen");
 const buttonrows = document.querySelectorAll(".buttonrow");
 const operandBtns = document.querySelectorAll(".operandBtns");
 
@@ -49,3 +50,10 @@ opBtns.forEach(btn => {
         btn.style.backgroundColor = "coral";
     })
 });
+
+//add Key to output screen
+keyBtns.forEach(btn => {
+    btn.addEventListener("click", ()=>{
+        outputScreen.textContent += btn.textContent;
+    })
+})

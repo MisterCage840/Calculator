@@ -34,7 +34,11 @@ body{
 .outputScreen{
     border: 2px solid black;
     border-radius: 5px;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 14pt;
+    height: 50px;
     margin: 20px;
 }
 
